@@ -11,5 +11,5 @@ public class FrameworkConstants {
 //	public static final String ACCESS_KEY = "BTtSx4GFE4VTXpGHxzTS";
 	public static final String URL_BROWSERSTACK = "@hub-cloud.browserstack.com/wd/hub";
 	
-		public static final String MAIN_URL = "https://qa.beta.etana.com";
+		public static final String MAIN_URL = "https://qa.aws.etana.com";
 }
