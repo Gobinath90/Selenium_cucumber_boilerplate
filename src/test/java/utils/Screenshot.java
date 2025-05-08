@@ -22,12 +22,12 @@ public class Screenshot {
     
     
     
-    @SuppressWarnings("deprecation")
+//    @SuppressWarnings("deprecation")
 	public static void takeScreenShot(){
         String stepName = "";
         String namePasta = "photos";
         try{
-            stepName = currentStep.getStepText();
+            stepName = currentStep.getStep().getText();
         }
         catch (NullPointerException ignored){
             Logger.warn("nome do step nao encontrado");

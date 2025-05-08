@@ -83,13 +83,15 @@ public class Driver {
 		boolean failed = scenario.isFailed();
 		System.out.println("is Failed? " + failed);
 		if (!failed) {
-			TakesScreenshot ts = (TakesScreenshot) driver;
-			final byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
-    		scenario.attach(screenshot, "image/png", scenario.getName());
-			
+			try {
+				TakesScreenshot ts = (TakesScreenshot) driver;
+				final byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+				scenario.attach(screenshot, "image/png", scenario.getName());
+			} catch (Exception e) {
+				System.err.println("Failed to take screenshot: " + e.getMessage());
+			}
 
 		}
 
 	}
-
 }

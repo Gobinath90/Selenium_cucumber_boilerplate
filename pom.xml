@@ -9,11 +9,13 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<cucumber.version>7.2.0</cucumber.version>
-		<selenium.version>4.11.0</selenium.version>
-		<extentreports.version>5.0.9</extentreports.version>
+		<cucumber.version>7.11.0</cucumber.version>
+		<selenium.version>4.18.1</selenium.version>
+		<extentreports.version>5.1.1</extentreports.version>
 		<log4j.version>3.0.0-alpha1</log4j.version>
 		<owner.version>1.0.12</owner.version>
+		<lombok.version>1.18.24</lombok.version>
+
 	</properties>
 
 
@@ -38,7 +40,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.24</version>
+			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!--https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
